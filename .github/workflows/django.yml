@@ -38,4 +38,4 @@ jobs:
         mypy . --ignore-missing-imports --exclude '^venv/'
     - name: Run Tests
       run: |
-        DJANGO_TESTING=true python manage.py test
+        DJANGO_TESTING=true SECRET_KEY='test' python manage.py test
