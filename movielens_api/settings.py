@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+from typing import Any, List
 
 from dotenv import load_dotenv
 
@@ -11,7 +12,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 
 DEBUG = os.getenv("DEBUG")
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS: List[Any] = []
 
 INSTALLED_APPS = [
     "django.contrib.admin",
